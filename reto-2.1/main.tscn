@@ -1,25 +1,23 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://brpotwocoa45b"]
 
-[ext_resource type="Script" path="res://main.gd" id="1"]
+[ext_resource type="Script" uid="uid://djndrl6ppcb13" path="res://main.gd" id="1"]
 [ext_resource type="PackedScene" path="res://player_base.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://cxjofhlf4apns" path="res://assets/cesped.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://omysrdwndib1" path="res://assets/tierra.png" id="4"]
 
-[ext_resource type="Texture2D" path="res://assets/cesped.png" id="3"]
-[ext_resource type="Texture2D" path="res://assets/tierra.png" id="4"]
-
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=1750480355]
 script = ExtResource("1")
 
-[node name="Hud" type="Label" parent="."]
+[node name="Hud" type="Label" parent="." unique_id=1094397312]
 offset_left = 40.0
 offset_top = 40.0
-mouse_filter = 2
 theme_override_colors/font_color = Color(0.87, 0.94, 1, 1)
 theme_override_font_sizes/font_size = 22
 
-[node name="Player" parent="." instance=ExtResource("2")]
+[node name="Player" parent="." unique_id=102885895 instance=ExtResource("2")]
 position = Vector2(576, 500)
 
-[node name="Piso" type="Sprite2D" parent="."]
+[node name="Piso" type="Sprite2D" parent="." unique_id=661206110]
 texture_filter = 1
 texture_repeat = 2
 position = Vector2(0, 524)
@@ -29,7 +27,7 @@ centered = false
 region_enabled = true
 region_rect = Rect2(0, 0, 576, 18)
 
-[node name="Tierra" type="Sprite2D" parent="."]
+[node name="Tierra" type="Sprite2D" parent="." unique_id=219959457]
 texture_filter = 1
 texture_repeat = 2
 position = Vector2(0, 560)
