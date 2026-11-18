@@ -20,7 +20,7 @@ func _process(_delta: float) -> void:
 	var eje := Input.get_axis("move_left", "move_right")
 	var fuerza := Input.get_action_strength("move_right")
 
-	hud.text = "A / D   Mover     ·     Espacio   Ver estado de jump\n\n"
+	hud.text = "A / D   Mover     ·     Espacio   Saltar\n\n"
 	hud.text += "jump: %s\nget_axis: %.2f\nget_action_strength(\"move_right\"): %.2f\n\n" % [salto, eje, fuerza]
 	hud.text += "Último evento: %s\nDispositivo: %s\nTipo de señal: %s\n\n" % [clase, dispositivo, senal]
 	hud.text += "Cuadros con move_right pulsada: %d\nEventos de move_right: %d" % [cuadros_derecha, eventos_derecha]
